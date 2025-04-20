@@ -5,22 +5,22 @@ function Projects() {
 			<p>This is the Projects page.</p>
 			<div style={{ display: "flex", flexWrap: "wrap", gap: "16px" }}>
 				<div
-					style={{ width: "400px", height: "250px", backgroundColor: "#ccc" }}
+					style={{ width: "400px", height: "250px", backgroundColor: "black" }}
 				></div>
 				<div
-					style={{ width: "400px", height: "250px", backgroundColor: "#ccc" }}
+					style={{ width: "400px", height: "250px", backgroundColor: "black" }}
 				></div>
 				<div
-					style={{ width: "400px", height: "250px", backgroundColor: "#ccc" }}
+					style={{ width: "400px", height: "250px", backgroundColor: "black" }}
 				></div>
 				<div
-					style={{ width: "400px", height: "250px", backgroundColor: "#ccc" }}
+					style={{ width: "400px", height: "250px", backgroundColor: "black" }}
 				></div>
 				<div
-					style={{ width: "400px", height: "250px", backgroundColor: "#ccc" }}
+					style={{ width: "400px", height: "250px", backgroundColor: "black" }}
 				></div>
 				<div
-					style={{ width: "400px", height: "250px", backgroundColor: "#ccc" }}
+					style={{ width: "400px", height: "250px", backgroundColor: "black" }}
 				></div>
 			</div>
 		</div>

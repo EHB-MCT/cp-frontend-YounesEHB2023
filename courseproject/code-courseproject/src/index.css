@@ -1,5 +1,6 @@
 body {
 	background-color: rgb(135, 232, 232);
+	font-family: "Arek Latin", sans-serif;
 }
 nav {
 	text-align: center;
@@ -30,5 +31,5 @@ nav ul li:hover {
 nav a {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
-	font-weight: 800;
+	font-weight: 750;
 }
