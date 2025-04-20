@@ -9,13 +9,13 @@ function Navbar() {
 						<Link to="/">Home</Link>
 					</li>
 					<li>
-						<Link to="/blogs">Blogs</Link>
+						<Link to="/MakingOf">MakingOf</Link>
 					</li>
 					<li>
-						<Link to="/contact">Contact</Link>
+						<Link to="/Projects">Projects</Link>
 					</li>
 					<li>
-						<Link to="/parallax" target="_blank" rel="noopener noreferrer">
+						<Link to="/Parallax" target="_blank" rel="noopener noreferrer">
 							Parallax
 						</Link>
 					</li>
