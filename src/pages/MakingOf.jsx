@@ -9,6 +9,7 @@ function MakingOf() {
 			<Underline />
 			<div className="home-text">
 				<h1>Making of - Aladdin en de wonderlamp</h1>
+				<img src="./src/images/banner_Aladdin.jpg" alt="Making of Aladdin" />
 			</div>
 		</div>
 	);

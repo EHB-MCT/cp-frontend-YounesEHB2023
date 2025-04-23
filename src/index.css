@@ -158,7 +158,13 @@ nav a {
 .all-projects-btn:hover {
 	transform: translateY(-3px);
 }
+/*MAKING OF*/
 
+.home-text img {
+	display: block;
+	margin: 0 auto;
+	vertical-align: middle;
+}
 /*Footer*/
 footer {
 	margin-top: 50px;
