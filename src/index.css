@@ -158,13 +158,21 @@ nav a {
 .all-projects-btn:hover {
 	transform: translateY(-3px);
 }
+/*HOME END*/
 /*MAKING OF*/
 
 .home-text img {
 	display: block;
 	margin: 0 auto;
-	vertical-align: middle;
+	width: 75%;
 }
+.content-section h2 {
+	font-family: "Bungee";
+	font-size: 18px;
+	margin-left: 190px;
+}
+/*MAKING OF END*/
+
 /*Footer*/
 footer {
 	margin-top: 50px;
