@@ -96,17 +96,25 @@ nav a {
 	font-size: 24px;
 	margin-left: 190px;
 }
-.spotlight-container,
-.spotlight-container2,
-.spotlight-container3 {
-	border: 5px solid blue;
+.spotlight-wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
+.spotlight-container {
+	border: 2px solid #007bff;
 	border-radius: 10px;
-	padding: 10px;
-	max-width: 300px;
+	width: 250px;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotlight-container:hover {
+	transform: translateY(-5px);
 }
 
 .spotlight-image {
 	text-align: center;
+	margin-bottom: 10px;
 }
 
 .spotlight-image img {
@@ -114,37 +122,29 @@ nav a {
 	border-radius: 5px;
 }
 
-.spotlight-content1,
 .spotlight-content {
-	margin-top: 10px;
+	text-align: center;
 }
 
-.spotlight-content1 h2,
 .spotlight-content h2 {
-	font-size: 1.5em;
+	font-size: 18px;
+	margin: 10px 0 5px;
+	color: #333;
+}
+
+.spotlight-content p {
+	font-size: 14px;
+	color: #666;
 	margin: 0;
 }
 
-.spotlight-content1 p,
-.spotlight-content p {
-	font-size: 1em;
-	color: #555;
-}
-
 .spotlight-icon {
-	margin-top: 10px;
+	margin-top: 15px;
 	text-align: center;
 }
 
 .spotlight-icon img {
-	width: 20px;
-	height: 20px;
-}
-
-.spotlight-wrapper {
-	display: flex;
-	justify-content: space-around;
-	gap: 20px;
+	width: 100%;
 }
 
 /*Footer*
