@@ -3,11 +3,12 @@
 body {
 	background-color: rgb(255, 255, 255);
 	font-family: "Arek Latin", sans-serif;
-
+	/*
 	background-image: url("./src/images/background_image_frontend-min.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	*/
 }
 
 nav {
@@ -29,11 +30,6 @@ nav ul li {
 	text-align: center;
 	cursor: pointer;
 	transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-nav ul li:hover {
-	background-color: rgb(0, 123, 255);
-	color: rgb(255, 255, 255);
 }
 
 nav a {
@@ -98,7 +94,7 @@ nav a {
 }
 
 .spotlight-container {
-	border: 5px solid #007bff;
+	border: 5px solid black;
 	border-radius: 10px;
 	background-color: white;
 	width: 250px;
@@ -142,6 +138,24 @@ nav a {
 
 .spotlight-icon img {
 	width: 15%;
+}
+.all-projects-btn {
+	background-color: red;
+	color: white;
+	font-family: "Bungee", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 25px;
+	text-transform: uppercase;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	text-decoration: none;
+}
+
+.all-projects-btn:hover {
+	transform: translateY(-3px);
 }
 
 /*Footer*/
