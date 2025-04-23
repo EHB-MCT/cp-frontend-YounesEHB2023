@@ -102,7 +102,7 @@ nav a {
 }
 
 .spotlight-container {
-	border: 2px solid #007bff;
+	border: 5px solid #007bff;
 	border-radius: 10px;
 	width: 250px;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -144,18 +144,22 @@ nav a {
 }
 
 .spotlight-icon img {
-	width: 100%;
+	width: 15%;
 }
 
-/*Footer*
+/*Footer*/
 footer {
+	padding: 200px;
 	display: flex;
 	background-color: rgb(255, 255, 255);
 	align-items: center;
-	justify-content: center;
+	justify-content: space-around;
 	gap: 50px;
 }
 .about p {
-	margin-top: -20px;
+	text-align: left;
+}
+.footer-nav {
+	text-align: left;
 }
 /*End of footer*/
