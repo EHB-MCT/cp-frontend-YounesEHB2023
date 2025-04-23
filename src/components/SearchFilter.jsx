@@ -13,7 +13,9 @@ function SearchFilter({ onSearch }) {
 			>
 				Search
 			</button>
+		
 		</div>
+		
 	);
 }
 

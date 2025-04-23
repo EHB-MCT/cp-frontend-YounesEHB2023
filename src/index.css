@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
 body {
 	background-color: rgb(255, 255, 255);
 	font-family: "Arek Latin", sans-serif;
@@ -44,8 +46,8 @@ nav a {
 	font-weight: 750;
 }
 .nav-image {
-	width: 70px;
-	height: 70px;
+	width: 100px;
+	height: 100px;
 	margin-right: 100px;
 	vertical-align: middle;
 }
@@ -85,9 +87,17 @@ nav a {
 .searchFilter button:hover {
 	background-color: darkred;
 }
+
 /*END Search filter css*/
 
-/*Footer*/
+/*HOME*/
+.home-text h1 {
+	font-family: "Bungee";
+	font-size: 24px;
+	margin-left: 190px;
+}
+
+/*Footer*
 footer {
 	display: flex;
 	background-color: rgb(255, 255, 255);

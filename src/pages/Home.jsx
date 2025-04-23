@@ -1,11 +1,15 @@
 import SearchFilter from "../components/SearchFilter";
-
+import Spotlight from "../components/Spotlight";
+import Underline from "../components/Underline";
 function Home() {
 	return (
 		<div>
 			<SearchFilter />
-			<h1>Home</h1>
-			<p>Welcome to the home page!</p>
+			<Underline />
+			<div className="home-text">
+				<h1>Int the spotlight</h1>
+				<Spotlight />
+			</div>
 		</div>
 	);
 }
