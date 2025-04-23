@@ -3,15 +3,11 @@
 body {
 	background-color: rgb(255, 255, 255);
 	font-family: "Arek Latin", sans-serif;
-	/* Later uncommenten want anders lagt het
 
-	background-image: url(images\background_image_frontend-min.svg);
+	background-image: url("./src/images/background_image_frontend-min.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
-
-
-	*/
 }
 
 nav {
@@ -104,6 +100,7 @@ nav a {
 .spotlight-container {
 	border: 5px solid #007bff;
 	border-radius: 10px;
+	background-color: white;
 	width: 250px;
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -149,7 +146,9 @@ nav a {
 
 /*Footer*/
 footer {
-	padding: 200px;
+	margin-top: 50px;
+	padding-left: 200px;
+	padding-right: 200px;
 	display: flex;
 	background-color: rgb(255, 255, 255);
 	align-items: center;
