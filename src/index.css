@@ -1,10 +1,15 @@
 body {
 	background-color: rgb(255, 255, 255);
 	font-family: "Arek Latin", sans-serif;
+	/* Later uncommenten want anders lagt het
+
 	background-image: url(images\background_image_frontend-min.svg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+
+
+	*/
 }
 
 nav {
@@ -37,6 +42,12 @@ nav a {
 	color: rgb(0, 0, 0);
 	text-decoration: none;
 	font-weight: 750;
+}
+.nav-image {
+	width: 70px;
+	height: 70px;
+	margin-right: 100px;
+	vertical-align: middle;
 }
 
 /*Search filter css*/
@@ -75,3 +86,16 @@ nav a {
 	background-color: darkred;
 }
 /*END Search filter css*/
+
+/*Footer*/
+footer {
+	display: flex;
+	background-color: rgb(255, 255, 255);
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+.about p {
+	margin-top: -20px;
+}
+/*End of footer*/
