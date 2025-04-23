@@ -12,7 +12,6 @@ function Projects() {
 				<h1>All projects</h1>
 				<Spotlight />
 				<Spotlight />
-				<Spotlight />
 			</div>
 		</div>
 	);
