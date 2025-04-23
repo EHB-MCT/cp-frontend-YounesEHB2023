@@ -7,7 +7,10 @@ function Navbar() {
 				<ul>
 					<li>
 						<Link to="/">
-							<img src="ErWasEens_Logo.png" width="50" height="50"></img>
+							<img
+								className="nav-image"
+								src="./src/images/ErWasEens_Logo.png"
+							></img>
 						</Link>
 					</li>
 					<li>
