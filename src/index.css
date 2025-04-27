@@ -4,7 +4,7 @@ body {
 	background-color: rgb(255, 255, 255);
 	font-family: "Arek Latin", sans-serif;
 	/*
-	background-image: url("./src/images/background_image_frontend-min.png");
+	background-image: url(background_image_frontend-min.png);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
