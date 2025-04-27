@@ -90,7 +90,8 @@ nav a {
 }
 .spotlight-wrapper {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	padding: 10px;
 }
 
 .spotlight-container {
@@ -134,6 +135,9 @@ nav a {
 .spotlight-icon {
 	margin-top: 15px;
 	text-align: center;
+	margin-left: 80px;
+	width: 35%;
+	margin-bottom: 20px;
 }
 
 .spotlight-icon img {
