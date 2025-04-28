@@ -164,6 +164,12 @@ nav a {
 /*HOME END*/
 /*MAKING OF*/
 
+.home-text img {
+	display: block;
+	margin: 0 auto;
+	vertical-align: middle;
+	width: 75%;
+}
 .content-section {
 	display: flex;
 	justify-content: space-between;
@@ -184,7 +190,7 @@ nav a {
 }
 
 .video-section video {
-	width: 100%;
+	width: 65%;
 	border: 3px solid black;
 	border-radius: 10px;
 }
@@ -201,9 +207,11 @@ nav a {
 
 .description-section p {
 	font-size: 14px;
+	font-weight: 600;
 	line-height: 1.6;
 	color: #333;
 	text-align: justify;
+	padding-right: 250px;
 }
 /*MAKING OF END*/
 

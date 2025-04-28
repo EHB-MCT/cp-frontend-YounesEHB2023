@@ -1,6 +1,7 @@
 import React from "react";
 import SearchFilter from "../components/SearchFilter.jsx";
-import Underline from "../components/Underline.jsx"; // Adjust the path based on your file structure
+import Underline from "../components/Underline.jsx";
+import MakingOfBtn from "../components/MakingOfBtn.jsx";
 
 function MakingOf() {
 	return (
@@ -34,6 +35,7 @@ function MakingOf() {
 						parallax scrolls and animated wonder, this tale isn’t just told —
 						it’s lived.
 					</p>
+					<MakingOfBtn />
 				</div>
 			</div>
 		</div>
