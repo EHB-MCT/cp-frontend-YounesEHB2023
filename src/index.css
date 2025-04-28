@@ -164,15 +164,46 @@ nav a {
 /*HOME END*/
 /*MAKING OF*/
 
-.home-text img {
-	display: block;
-	margin: 0 auto;
-	width: 75%;
+.content-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	padding: 20px;
+	gap: 20px;
 }
-.content-section h2 {
+
+.video-section {
+	flex: 1;
+	text-align: center;
+}
+
+.video-section h2 {
 	font-family: "Bungee";
 	font-size: 18px;
-	margin-left: 190px;
+	margin-bottom: 10px;
+}
+
+.video-section video {
+	width: 100%;
+	border: 3px solid black;
+	border-radius: 10px;
+}
+
+.description-section {
+	flex: 1;
+}
+
+.description-section h2 {
+	font-family: "Bungee";
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.description-section p {
+	font-size: 14px;
+	line-height: 1.6;
+	color: #333;
+	text-align: justify;
 }
 /*MAKING OF END*/
 
