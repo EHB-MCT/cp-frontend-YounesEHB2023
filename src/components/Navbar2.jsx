@@ -3,16 +3,18 @@ import { Outlet, Link } from "react-router";
 function Navbar2() {
 	return (
 		<>
-			<nav>
-				<ul>
-					<li>
-						<Link to="/">Home</Link>
-					</li>
-					<li>
-						<Link to="/MakingOf">MakingOf</Link>{" "}
-					</li>
-				</ul>
-			</nav>
+			<div className="navbar2">
+				<nav>
+					<ul>
+						<li>
+							<Link to="/">Home</Link>
+						</li>
+						<li>
+							<Link to="/MakingOf">MakingOf</Link>
+						</li>
+					</ul>
+				</nav>
+			</div>
 			<Outlet />
 		</>
 	);

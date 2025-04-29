@@ -1,10 +1,10 @@
 import Navbar2 from "../components/Navbar2";
-
+import Intro from "../ParallaxComponents/Intro";
 function Parallax() {
 	return (
 		<div className="parallax-title">
-			<Navbar2 />
-			<h2>Aladdin and the wonderlamp</h2>
+			{/*<Navbar2 />}*/}
+			<Intro />
 		</div>
 	);
 }

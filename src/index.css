@@ -234,6 +234,17 @@ footer {
 }
 /*End of footer*/
 
+@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap");
+/*PARALLAX*/
+.navbar2 a {
+	color: #ffd700;
+	padding: 10px 20px;
+	text-align: center;
+	font-weight: 800;
+	font-family: Anek latin;
+	font-size: 20px;
+}
+
 .parallax-title h2 {
 	font-family: "Bungee";
 	font-size: 30px;
