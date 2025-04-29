@@ -3,13 +3,13 @@
 body {
 	background-color: rgb(255, 255, 255);
 	font-family: "Arek Latin", sans-serif;
-
+}
+.background {
 	background-image: url(background_image_frontend.svg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 }
-
 nav {
 	text-align: center;
 }
@@ -233,3 +233,10 @@ footer {
 	text-align: left;
 }
 /*End of footer*/
+
+.parallax-title h2 {
+	font-family: "Bungee";
+	font-size: 30px;
+	text-align: center;
+	margin-top: 20px;
+}

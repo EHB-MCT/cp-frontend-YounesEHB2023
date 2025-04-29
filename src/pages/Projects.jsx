@@ -5,7 +5,7 @@ import Underline from "../components/Underline.jsx"; // Adjust the path based on
 import Spotlight from "../components/Spotlight.jsx"; // Adjust the path based on your file structure
 function Projects() {
 	return (
-		<div>
+		<div className="background">
 			<SearchFilter />
 			<Underline />
 			<div className="home-text">

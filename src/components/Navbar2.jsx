@@ -8,6 +8,9 @@ function Navbar2() {
 					<li>
 						<Link to="/">Home</Link>
 					</li>
+					<li>
+						<Link to="/MakingOf">MakingOf</Link>{" "}
+					</li>
 				</ul>
 			</nav>
 			<Outlet />

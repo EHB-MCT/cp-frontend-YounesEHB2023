@@ -4,7 +4,7 @@ import Spotlight from "../components/Spotlight";
 import Underline from "../components/Underline";
 function Home() {
 	return (
-		<div>
+		<div className="background">
 			<SearchFilter />
 			<Underline />
 			<div className="home-text">

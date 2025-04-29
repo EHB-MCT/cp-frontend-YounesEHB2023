@@ -5,7 +5,7 @@ import MakingOfBtn from "../components/MakingOfBtn.jsx";
 
 function MakingOf() {
 	return (
-		<div>
+		<div className="background">
 			<SearchFilter />
 			<Underline />
 			<div className="home-text">
