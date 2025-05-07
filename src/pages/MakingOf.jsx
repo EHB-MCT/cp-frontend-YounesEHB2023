@@ -15,13 +15,15 @@ function MakingOf() {
 			<div className="content-section">
 				<div className="video-section">
 					<h2>Explainer Video</h2>
-					<video controls>
-						<source
-							src="https://youtu.be/xvFZjo5PgG0?si=uFtKUanPZtTET14y"
-							type="video/mp4"
-						/>
-						Your browser does not support the video tag.
-					</video>
+					<iframe
+						width="560"
+						height="315"
+						src="https://www.youtube.com/embed/xvFZjo5PgG0?si=uFtKUanPZtTET14y"
+						title="Explainer Video"
+						frameBorder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+						allowFullScreen
+					></iframe>
 				</div>
 				<div className="description-section">
 					<h2>Description</h2>

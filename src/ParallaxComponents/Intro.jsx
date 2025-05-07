@@ -34,6 +34,7 @@ const Intro = () => {
 						width: "100%",
 						height: "auto",
 						margin: 0,
+						backgroundSize: "cover",
 					}}
 				/>
 				<img
@@ -56,9 +57,9 @@ const Intro = () => {
 						position: "absolute",
 						bottom: "50px",
 						right: "20%",
-						width: "300px",
+						width: "200px",
 						height: "auto",
-						top: "430px",
+						top: "500px",
 						zIndex: 1,
 					}}
 				/>
