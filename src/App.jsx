@@ -7,7 +7,8 @@ import Parallax from "./pages/Parallax.jsx";
 
 function App() {
 	return (
-		<BrowserRouter basename="/{cp-frontend-YounesEHB2023}">
+		// basename="/{cp-frontend-YounesEHB2023}"
+		<BrowserRouter>
 			<Routes>
 				<Route path="/" element={<Layout />}>
 					<Route index element={<Home />} />

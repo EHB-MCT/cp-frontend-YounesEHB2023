@@ -1,4 +1,5 @@
 import { Outlet, Link } from "react-router";
+import logo from "../assets/images/ErWasEens_Logo.png";
 
 function Navbar() {
 	return (
@@ -7,10 +8,7 @@ function Navbar() {
 				<ul>
 					<li>
 						<Link to="/">
-							<img
-								className="nav-image"
-								src="./src/images/ErWasEens_Logo.png"
-							></img>
+							<img className="image-navbar" src={logo} alt="Logo" />
 						</Link>
 					</li>
 					<li>
