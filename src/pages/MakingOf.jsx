@@ -2,7 +2,7 @@ import React from "react";
 import SearchFilter from "../components/SearchFilter.jsx";
 import Underline from "../components/Underline.jsx";
 import MakingOfBtn from "../components/MakingOfBtn.jsx";
-
+import banner from "../assets/images/banner_Aladdin.jpg";
 function MakingOf() {
 	return (
 		<div className="background">
@@ -10,7 +10,7 @@ function MakingOf() {
 			<Underline />
 			<div className="home-text">
 				<h1>Making of - Aladdin en de wonderlamp</h1>
-				<img src="./src/images/banner_Aladdin.jpg" alt="Making of Aladdin" />
+				<img className="banner-image" src={banner} alt="Logo" />{" "}
 			</div>
 			<div className="content-section">
 				<div className="video-section">

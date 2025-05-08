@@ -175,7 +175,9 @@ nav a {
 	justify-content: space-between;
 	align-items: flex-start;
 	padding: 20px;
-	gap: 20px;
+	background-color: white;
+	margin: 0 auto;
+	max-width: 1089px;
 }
 
 .video-section {
@@ -194,9 +196,14 @@ nav a {
 	border: 3px solid black;
 	border-radius: 10px;
 }
-
+iframe {
+	width: 70%;
+	height: 200px;
+	margin-top: 5px;
+}
 .description-section {
 	flex: 1;
+	margin-left: 50px;
 }
 
 .description-section h2 {
@@ -211,7 +218,7 @@ nav a {
 	line-height: 1.6;
 	color: #333;
 	text-align: justify;
-	padding-right: 250px;
+	padding-right: 150px;
 }
 /*MAKING OF END*/
 
