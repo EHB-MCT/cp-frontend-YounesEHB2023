@@ -1,18 +1,12 @@
 import React from "react";
 import IntroBG from "../assets/images/Parallax_background-20.jpg";
-import Jafar from "../assets/images/jafar_aladdin.png";
+import Jafar from "../assets/images/jafar_aladdinRight.png";
 import StreetAladdin from "../assets/images/Aladdin.svg";
 import { motion } from "framer-motion";
 const Intro = () => {
 	return (
 		<div id="intro">
-			<div
-				id="intro-section"
-				style={{
-					textAlign: "center",
-					padding: "50px 20px",
-				}}
-			>
+			<div id="intro-section">
 				<motion.div
 					style={{
 						position: "absolute",
@@ -23,6 +17,7 @@ const Intro = () => {
 						zIndex: 2,
 						fontSize: "30px",
 						textAlign: "center",
+						fontFamily: "Merienda, cursive",
 					}}
 					initial={{ opacity: 0, y: -50 }}
 					animate={{ opacity: 1, y: 0 }}
@@ -54,7 +49,7 @@ const Intro = () => {
 						left: "69%",
 						width: "150px",
 						height: "auto",
-						top: "505px",
+						top: "515px",
 						zIndex: 1,
 					}}
 				/>
