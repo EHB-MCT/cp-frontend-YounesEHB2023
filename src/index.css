@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap");
 body {
 	background-color: rgb(255, 255, 255);
 	font-family: "Arek Latin", sans-serif;
@@ -244,11 +244,17 @@ footer {
 }
 /*End of footer*/
 
-@import url("https://fonts.googleapis.com/css2?family=Anek+Latin:wght@100..800&display=swap");
 /*PARALLAX*/
 
+.intro-section h1 {
+	font-family: "Merienda", cursive;
+	font-size: 24px;
+	text-align: center;
+	margin-top: 20px;
+}
+
 .parallax-title h2 {
-	font-family: "Bungee";
+	font-family: "Merienda", cursive;
 	font-size: 30px;
 	text-align: center;
 	margin-top: 20px;
