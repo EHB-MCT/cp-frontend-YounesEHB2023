@@ -1,24 +1,37 @@
 import React from "react";
-
+import Cave from "../assets/images/Cave.jpg";
+// import Gradient from "../assets/images/Gradient.png";
 const Scene2 = () => {
 	return (
-		<div
-			id="scene2"
-			style={{
-				backgroundImage: "src/images/background_parallax.jpg",
-				backgroundSize: "cover",
-				backgroundPosition: "center",
-			}}
-		>
-			<div
-				id="scene2-section"
+		<>
+			{/* <img
+				className="GradientBG"
+				src={Gradient}
+				alt="Logo"
 				style={{
-					textAlign: "center",
 					position: "relative",
-					padding: "50px 20px",
+					top: "450px",
+					width: "100%",
+					height: "auto",
+					backgroundSize: "cover",
+					zIndex: 1,
 				}}
-			></div>
-		</div>
+			/> */}
+			<img
+				className="CaveBG"
+				src={Cave}
+				alt="Logo"
+				style={{
+					position: "absolute",
+					top: "910px",
+					left: 0,
+					width: "100%",
+					height: "auto",
+					margin: 0,
+					backgroundSize: "cover",
+				}}
+			/>
+		</>
 	);
 };
 

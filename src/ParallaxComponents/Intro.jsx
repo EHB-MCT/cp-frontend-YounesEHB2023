@@ -1,5 +1,8 @@
 import React from "react";
-
+import IntroBG from "../assets/images/Parallax_background-20.jpg";
+import Jafar from "../assets/images/jafar_aladdin.png";
+import StreetAladdin from "../assets/images/Aladdin.svg";
+import { motion } from "framer-motion";
 const Intro = () => {
 	return (
 		<div id="intro">
@@ -7,26 +10,31 @@ const Intro = () => {
 				id="intro-section"
 				style={{
 					textAlign: "center",
-					position: "relative",
 					padding: "50px 20px",
 				}}
 			>
-				<div
+				<motion.div
 					style={{
 						position: "absolute",
-						top: "300px",
-						left: "50%",
+						top: "200px",
+						left: "25%",
 						transform: "translate(-50%, -50%)",
 						color: "white",
 						zIndex: 2,
-						fontSize: "20px",
+						fontSize: "30px",
+						textAlign: "center",
 					}}
+					initial={{ opacity: 0, y: -50 }}
+					animate={{ opacity: 1, y: 0 }}
+					transition={{ duration: 1.5 }}
 				>
 					<h1> Aladdin and the wonderlamp </h1>
-				</div>
+				</motion.div>
+
 				<img
-					src="src/images/background_parallax.jpg"
-					alt="Background"
+					className="IntroBG"
+					src={IntroBG}
+					alt="Logo"
 					style={{
 						position: "absolute",
 						top: 0,
@@ -38,28 +46,29 @@ const Intro = () => {
 					}}
 				/>
 				<img
-					src="src\images\jafar_aladdin.png"
+					src={Jafar}
 					alt="Image 1"
 					style={{
 						position: "absolute",
 						bottom: "50px",
-						left: "20%",
-						width: "350px",
+						left: "69%",
+						width: "150px",
 						height: "auto",
-						top: "430px",
+						top: "505px",
 						zIndex: 1,
 					}}
 				/>
 				<img
-					src="src\images\streetboy_aladdin.png"
+					src={StreetAladdin}
 					alt="Image 2"
 					style={{
 						position: "absolute",
 						bottom: "50px",
 						right: "20%",
-						width: "200px",
+						left: "15%",
+						width: "150px",
 						height: "auto",
-						top: "500px",
+						top: "310px",
 						zIndex: 1,
 					}}
 				/>
