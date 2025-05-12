@@ -25,7 +25,7 @@ const Intro = () => {
 				>
 					<h1> Aladdin and the wonderlamp </h1>
 				</motion.div>
-
+				{/* Background intro */}
 				<img
 					className="IntroBG"
 					src={IntroBG}
@@ -40,19 +40,21 @@ const Intro = () => {
 						backgroundSize: "cover",
 					}}
 				/>
+				{/* Jafar intro */}
 				<img
 					src={Jafar}
 					alt="Image 1"
 					style={{
 						position: "absolute",
 						bottom: "50px",
-						left: "69%",
-						width: "150px",
+						left: "64%",
+						width: "200px",
 						height: "auto",
-						top: "515px",
+						top: "446px",
 						zIndex: 1,
 					}}
 				/>
+				{/* Aladdin intro */}
 				<img
 					src={StreetAladdin}
 					alt="Image 2"
@@ -67,7 +69,6 @@ const Intro = () => {
 						zIndex: 1,
 					}}
 				/>
-				<h1 style={{ fontSize: "2rem", fontWeight: "bold" }}></h1>
 			</div>
 		</div>
 	);
