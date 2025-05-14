@@ -1,16 +1,63 @@
-import React, { useState } from "react";
-import IntroBG from "../assets/images/Parallax_background-20.jpg";
+import React, { useState, useEffect } from "react";
+// import IntroBG from "../assets/images/Parallax_background-20.jpg";
+import IntroBG from "../assets/images/Parallax_layer2.png";
 import Jafar from "../assets/images/jafar_aladdinRight.png";
 import StreetAladdin from "../assets/images/Aladdin.svg";
-import Secret from "../assets/images/Secret.png"; // vervang dit door je eigen genie-afbeelding
-import { motion } from "framer-motion";
+import Secret from "../assets/images/Secret.png";
+import LayerIntro from "../assets/images/Parallax_Layer_Palace.png";
+import { motion, useAnimation } from "framer-motion";
 
 const Intro = () => {
+	const [scrollY, setScrollY] = useState(0);
 	const [isHovered, setIsHovered] = useState(false);
 
+	useEffect(() => {
+		const handleScroll = () => {
+			setScrollY(window.scrollY);
+		};
+		window.addEventListener("scroll", handleScroll);
+		return () => window.removeEventListener("scroll", handleScroll);
+	}, []);
+
 	return (
-		<div id="intro">
-			<div id="intro-section">
+		<div id="intro" style={{ height: "100vh", position: "relative" }}>
+			<div
+				id="intro-section"
+				style={{ position: "relative", height: "100vh", overflow: "hidden" }}
+			>
+				{/* Parallax Background */}
+				<motion.div
+					className="IntroBG"
+					style={{
+						position: "absolute",
+						top: 0,
+						left: 0,
+						width: "100%",
+						height: "100%",
+						backgroundImage: `url(${IntroBG})`,
+						backgroundSize: "cover",
+						zIndex: 0,
+						transform: `translateY(${scrollY * 0.2}px)`,
+					}}
+				/>
+
+				{/* Parallax Layer */}
+				<motion.div
+					className="LayerIntro"
+					style={{
+						position: "absolute",
+						top: 0,
+						left: 0,
+						width: "100%",
+						height: "100%",
+						backgroundImage: `url(${LayerIntro})`,
+						backgroundSize: "cover",
+						zIndex: 1,
+						transform: `translateY(${scrollY * 0.4}px)`,
+					}}
+				/>
+
+				{/* Title */}
 				<motion.div
 					style={{
 						position: "absolute",
@@ -30,22 +77,6 @@ const Intro = () => {
 					<h1> Aladdin and the wonderlamp </h1>
 				</motion.div>
 
-				{/* Background intro */}
-				<img
-					className="IntroBG"
-					src={IntroBG}
-					alt="Background"
-					style={{
-						position: "absolute",
-						top: 0,
-						left: 0,
-						width: "100%",
-						height: "auto",
-						margin: 0,
-						backgroundSize: "cover",
-					}}
-				/>
-
 				{/* Jafar intro */}
 				<img
 					src={Jafar}
@@ -56,17 +87,20 @@ const Intro = () => {
 						left: "64%",
 						width: "200px",
 						height: "auto",
-						top: "446px",
+						top: "460px",
 						zIndex: 1,
 					}}
 				/>
 
 				{/* Aladdin intro with hover effect (Easter Egg Secret) */}
-				<img
+				<motion.img
 					src={isHovered ? Secret : StreetAladdin}
 					alt="Aladdin or Genie"
 					onMouseEnter={() => setIsHovered(true)}
 					onMouseLeave={() => setIsHovered(false)}
+					initial={{ x: -60, opacity: 0 }}
+					animate={{ x: 0, opacity: 1 }}
+					transition={{ duration: 1 }}
 					style={{
 						position: "absolute",
 						bottom: "50px",
@@ -74,9 +108,9 @@ const Intro = () => {
 						left: "15%",
 						width: "150px",
 						height: "auto",
-						top: "310px",
+						top: "305px",
 						zIndex: 1,
-						transition: "transform 0.3s ease-in-out",
+						transition: "transform 1s ease-in-out",
 						transform: isHovered ? "scale(1.1)" : "scale(1)",
 					}}
 				/>

@@ -13,3 +13,5 @@ If you are developing a production application, we recommend using TypeScript an
 
 // links
 [Hover-tap animation-tutorial](https://youtu.be/g601zycsPVA?si=U47nUWePjb-PrpC2)
+
+[Parallax scroll](https://youtu.be/29UWA-GdA7k?si=8sSdkuRg8xHQcCrG)

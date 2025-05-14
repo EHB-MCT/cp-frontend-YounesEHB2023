@@ -7,7 +7,7 @@ function Parallax() {
 			{/* <Navbar2 /> */}
 			<Intro />
 			<Scene2 />
-			<Scene3 />
+			{/* <Scene3 /> */}
 		</div>
 	);
 }
