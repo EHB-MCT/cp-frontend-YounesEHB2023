@@ -149,8 +149,8 @@ const Scene3 = () => {
 					backgroundColor: "rgba(128, 128, 128, 0.8)",
 				}}
 			>
-				She appears before him. Now only one wish remains… what will his final
-				choice be?
+				She appears in front of him. Now only one wish remains… what will his
+				final choice be?
 			</p>
 			<img
 				src={StreetAladdin}
