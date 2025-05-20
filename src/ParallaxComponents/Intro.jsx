@@ -42,7 +42,7 @@ const Intro = () => {
 						backgroundSize: "cover",
 						backgroundPosition: "center",
 						zIndex: 0,
-						transform: `translateY(${scrollY * 0.2}px)`,
+						transform: `translateY(${scrollY * 0.1}px)`,
 					}}
 				/>
 

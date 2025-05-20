@@ -1,11 +1,13 @@
 import React from "react";
 import Cave from "../assets/images/Cave.jpg";
+import CaveLayer2 from "../assets/images/LayerCave2.png";
 import CaveLamp from "../assets/images/Cave_Lamp.png";
 import Stone from "../assets/images/Stone.png";
 import Jafar from "../assets/images/jafar_aladdin.png";
 import StreetAladdin from "../assets/images/Aladdin.svg";
 import JafarRight from "../assets/images/jafar_aladdinRight.png";
 import Lamp from "../assets/images/Lamp.png";
+import { motion } from "framer-motion";
 const Scene2 = () => {
 	return (
 		<>
@@ -58,9 +60,8 @@ const Scene2 = () => {
 						zIndex: 1,
 					}}
 				/>
-				{/* Grot */}
-
-				<img
+				{/*  Grot */}
+				<motion.img
 					className="CaveBG"
 					src={Cave}
 					alt="Logo"
@@ -73,24 +74,54 @@ const Scene2 = () => {
 						margin: 0,
 						backgroundSize: "cover",
 					}}
+					initial={{ scaleX: 0, opacity: 0 }}
+					whileInView={{ scaleX: 1, opacity: 1 }}
+					viewport={{ once: true, amount: 0.2 }} // effect triggers when 20% of element is in viewport
+					transition={{ duration: 1 }}
+				/>
+				<motion.img
+					className="CaveBGLayer1"
+					src={CaveLayer2}
+					alt="Logo"
+					style={{
+						position: "absolute",
+						top: "910px",
+						left: 0,
+						width: "100%",
+						height: "auto",
+						margin: 0,
+						backgroundSize: "cover",
+					}}
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					viewport={{ once: true, amount: 0.2 }} // effect triggers when 20% of element is in viewport
+					transition={{ duration: 3 }}
 				/>
 			</div>
 
 			<div className="Tomb-begin">
 				{/* Lamp */}
-				<img
+				<motion.img
 					className="Lamp"
 					src={Lamp}
 					alt="Logo"
 					style={{
 						position: "absolute",
-						top: "2215px",
+						top: "2250px",
 						left: "45%",
 						width: "10%",
 						height: "auto",
 						margin: 0,
 						backgroundSize: "cover",
 						zIndex: 1,
+					}}
+					animate={{
+						y: [0, -15, 0], // Moves up 15px then back
+					}}
+					transition={{
+						duration: 2,
+						repeat: Infinity,
+						ease: "easeInOut",
 					}}
 				/>
 				<img
