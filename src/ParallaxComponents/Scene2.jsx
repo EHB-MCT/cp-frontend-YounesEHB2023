@@ -1,5 +1,6 @@
 import React from "react";
 import Cave from "../assets/images/Cave.jpg";
+import CaveLayer1 from "../assets/images/LayerCave1.png";
 import CaveLayer2 from "../assets/images/LayerCave2.png";
 import CaveLamp from "../assets/images/Cave_Lamp.png";
 import Stone from "../assets/images/Stone.png";
@@ -9,6 +10,15 @@ import JafarRight from "../assets/images/jafar_aladdinRight.png";
 import Lamp from "../assets/images/Lamp.png";
 import { motion } from "framer-motion";
 const Scene2 = () => {
+	const [jafarVisible, setJafarVisible] = React.useState(true);
+
+	React.useEffect(() => {
+		const timer = setTimeout(() => {
+			setJafarVisible(false);
+		}, 4000);
+		return () => clearTimeout(timer);
+	}, []);
+	// this is the code to let jafar disappear after 4 seconds
 	return (
 		<>
 			<div className="Cave-entrance">
@@ -76,7 +86,7 @@ const Scene2 = () => {
 					}}
 					initial={{ scaleX: 0, opacity: 0 }}
 					whileInView={{ scaleX: 1, opacity: 1 }}
-					viewport={{ once: true, amount: 0.2 }} // effect triggers when 20% of element is in viewport
+					viewport={{ once: true, amount: 0.2 }}
 					transition={{ duration: 1 }}
 				/>
 				<motion.img
@@ -94,7 +104,7 @@ const Scene2 = () => {
 					}}
 					initial={{ opacity: 0 }}
 					whileInView={{ opacity: 1 }}
-					viewport={{ once: true, amount: 0.2 }} // effect triggers when 20% of element is in viewport
+					viewport={{ once: true, amount: 0.2 }}
 					transition={{ duration: 3 }}
 				/>
 			</div>
@@ -189,9 +199,9 @@ const Scene2 = () => {
 			</div>
 
 			<div className="Cave-exit">
-				<img
+				<motion.img
 					className="CaveBG"
-					src={Cave}
+					src={CaveLayer1}
 					alt="Logo"
 					style={{
 						position: "absolute",
@@ -202,8 +212,42 @@ const Scene2 = () => {
 						margin: 0,
 						backgroundSize: "cover",
 					}}
+					animate={{
+						x: [0, -10, 10, -10, 0],
+						y: [0, 5, -5, 5, 0],
+					}}
+					transition={{
+						duration: 2,
+						repeat: Infinity,
+						repeatType: "reverse",
+						ease: "easeInOut",
+					}}
 				/>
-				<img
+				<motion.img
+					className="CaveBG"
+					src={CaveLayer2}
+					alt="Logo"
+					style={{
+						position: "absolute",
+						top: "2800px",
+						left: 0,
+						width: "100%",
+						height: "auto",
+						margin: 0,
+						backgroundSize: "cover",
+					}}
+					animate={{
+						x: [0, 10, -10, 10, 0],
+						y: [0, -5, 5, -5, 0],
+					}}
+					transition={{
+						duration: 2,
+						repeat: Infinity,
+						repeatType: "reverse",
+						ease: "easeInOut",
+					}}
+				/>
+				<motion.img
 					className="CaveBG"
 					src={Stone}
 					alt="Logo"
@@ -215,6 +259,16 @@ const Scene2 = () => {
 						height: "auto",
 						margin: 0,
 						backgroundSize: "cover",
+					}}
+					animate={{
+						x: [0, -8, 8, -8, 0],
+						y: [0, 8, -8, 8, 0],
+					}}
+					transition={{
+						duration: 2,
+						repeat: Infinity,
+						repeatType: "reverse",
+						ease: "easeInOut",
 					}}
 				/>
 				<p
@@ -235,7 +289,7 @@ const Scene2 = () => {
 				>
 					After an argument, he traps Aladdin inside and disappears.
 				</p>
-				<img
+				<motion.img
 					src={Jafar}
 					alt="Image 1"
 					style={{
@@ -244,9 +298,11 @@ const Scene2 = () => {
 						left: "58%",
 						width: "20%",
 						height: "auto",
-						top: "3336px",
+						top: "3395px",
 						zIndex: 1,
 					}}
+					animate={{ opacity: jafarVisible ? 1 : 0 }}
+					transition={{ duration: 1 }}
 				/>
 			</div>
 		</>
