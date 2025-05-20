@@ -20,10 +20,14 @@ const Intro = () => {
 	}, []);
 
 	return (
-		<div id="intro" style={{ height: "100vh", position: "relative" }}>
+		<div id="intro" style={{ position: "fixed" }}>
 			<div
 				id="intro-section"
-				style={{ position: "relative", height: "100vh", overflow: "hidden" }}
+				style={{
+					position: "fixed",
+					top: 0,
+					overflow: "hidden",
+				}}
 			>
 				{/* Parallax Background */}
 				<motion.div
@@ -32,28 +36,30 @@ const Intro = () => {
 						position: "absolute",
 						top: 0,
 						left: 0,
-						width: "100%",
-						height: "100%",
+						width: "100vw",
+						height: "100vh",
 						backgroundImage: `url(${IntroBG})`,
 						backgroundSize: "cover",
+						backgroundPosition: "center",
 						zIndex: 0,
 						transform: `translateY(${scrollY * 0.2}px)`,
 					}}
 				/>
 
-				{/* Parallax Layer */}
-				<motion.div
+				{/* Parallax Layer (fixed, does not move) */}
+				<div
 					className="LayerIntro"
 					style={{
-						position: "absolute",
+						position: "relative",
 						top: 0,
 						left: 0,
-						width: "100%",
-						height: "100%",
+						width: "100vw",
+						height: "100vh",
 						backgroundImage: `url(${LayerIntro})`,
 						backgroundSize: "cover",
+						backgroundPosition: "center",
 						zIndex: 1,
-						transform: `translateY(${scrollY * 0.4}px)`,
+						pointerEvents: "none",
 					}}
 				/>
 
@@ -62,13 +68,13 @@ const Intro = () => {
 					style={{
 						position: "absolute",
 						top: "200px",
-						left: "25%",
 						transform: "translate(-50%, -50%)",
 						color: "white",
 						zIndex: 2,
 						fontSize: "30px",
 						textAlign: "center",
 						fontFamily: "Merienda, cursive",
+						width: "100vw",
 					}}
 					initial={{ opacity: 0, y: -50 }}
 					animate={{ opacity: 1, y: 0 }}
@@ -88,7 +94,7 @@ const Intro = () => {
 						width: "200px",
 						height: "auto",
 						top: "460px",
-						zIndex: 1,
+						zIndex: 2,
 					}}
 				/>
 
@@ -109,7 +115,7 @@ const Intro = () => {
 						width: "150px",
 						height: "auto",
 						top: "305px",
-						zIndex: 1,
+						zIndex: 2,
 						transition: "transform 1s ease-in-out",
 						transform: isHovered ? "scale(1.1)" : "scale(1)",
 					}}

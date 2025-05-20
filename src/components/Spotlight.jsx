@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/images/ErWasEens_Logo.png";
 import info from "../assets/images/info_icon.png";
 const Spotlight = ({ imageSrc, title, description, icon }) => {
 	return (
@@ -7,7 +6,11 @@ const Spotlight = ({ imageSrc, title, description, icon }) => {
 			{[1, 2, 3].map((_, index) => (
 				<div key={index} className="spotlight-container">
 					<div className="spotlight-image">
-						<img className="image" src={logo} alt="Logo" />
+						<img
+							className="image"
+							src="https://res.cloudinary.com/dqc8nbwtd/image/upload/v1747761423/Thumbnail_l0eyuc.png"
+							alt="Logo"
+						/>
 					</div>
 					<div className="spotlight-content">
 						<h2>{"Aladdin"}</h2>

@@ -3,7 +3,7 @@ import Scene2 from "../ParallaxComponents/Scene2";
 import Scene3 from "../ParallaxComponents/Scene3";
 function Parallax() {
 	return (
-		<div className="parallax-title">
+		<div className="parallax-container">
 			{/* <Navbar2 /> */}
 			<Intro />
 			<Scene2 />
