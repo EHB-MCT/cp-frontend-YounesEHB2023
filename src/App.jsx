@@ -6,6 +6,15 @@ import MakingOf from "./pages/MakingOf.jsx";
 import Parallax from "./pages/Parallax.jsx";
 
 function App() {
+	const redirect = new URLSearchParams(window.location.search).get("redirect");
+	if (redirect) {
+		// this helps the show the parallax when there is a 404 error
+		window.history.replaceState(
+			null,
+			"",
+			`/cp-frontend-YounesEHB2023${redirect}`
+		);
+	}
 	return (
 		<BrowserRouter basename="/cp-frontend-YounesEHB2023">
 			<Routes>
