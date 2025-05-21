@@ -13,5 +13,6 @@ If you are developing a production application, we recommend using TypeScript an
 
 // links
 [Hover-tap animation-tutorial](https://youtu.be/g601zycsPVA?si=U47nUWePjb-PrpC2)
-
 [Parallax scroll](https://youtu.be/29UWA-GdA7k?si=8sSdkuRg8xHQcCrG)
+[404 error fix](https://youtu.be/fuGu-Ponjf8?si=roF68vpLt3z-quAN)
+[Deploy fix ( link from wout who had the same error, i just took over the steps)](https://chatgpt.com/share/682b3eeb-8054-8003-ab2b-8ca273860191)

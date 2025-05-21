@@ -15,10 +15,10 @@ const Scene2 = () => {
 	React.useEffect(() => {
 		const timer = setTimeout(() => {
 			setJafarVisible(false);
-		}, 4000);
+		}, 20000);
 		return () => clearTimeout(timer);
 	}, []);
-	// this is the code to let jafar disappear after 4 seconds
+	// this is the code to let jafar disappear after 20 seconds
 	return (
 		<>
 			<div className="Cave-entrance">
@@ -212,16 +212,6 @@ const Scene2 = () => {
 						margin: 0,
 						backgroundSize: "cover",
 					}}
-					animate={{
-						x: [0, -10, 10, -10, 0],
-						y: [0, 5, -5, 5, 0],
-					}}
-					transition={{
-						duration: 2,
-						repeat: Infinity,
-						repeatType: "reverse",
-						ease: "easeInOut",
-					}}
 				/>
 				<motion.img
 					className="CaveBG"
@@ -237,7 +227,7 @@ const Scene2 = () => {
 						backgroundSize: "cover",
 					}}
 					animate={{
-						x: [0, 10, -10, 10, 0],
+						x: [0, -5, 5, -5, 0],
 						y: [0, -5, 5, -5, 0],
 					}}
 					transition={{
@@ -261,8 +251,7 @@ const Scene2 = () => {
 						backgroundSize: "cover",
 					}}
 					animate={{
-						x: [0, -8, 8, -8, 0],
-						y: [0, 8, -8, 8, 0],
+						y: [0, 2, -2, 2, 0],
 					}}
 					transition={{
 						duration: 2,
