@@ -4,8 +4,25 @@ import Market from "../assets/images/Market.jpg";
 import CaveLamp from "../assets/images/Cave_Lamp.png";
 import StreetAladdin from "../assets/images/Aladdin.svg";
 import Lamp from "../assets/images/Lamp.png";
+import Genie from "../assets/images/Genie.png";
 import Yasmine from "../assets/images/Yasmine.png";
+import { useState, useRef } from "react";
+import { motion, AnimatePresence } from "framer-motion";
 const Scene3 = () => {
+	const [showGenie, setShowGenie] = useState(false);
+	const timerRef = useRef(null);
+
+	const handleLampMouseEnter = () => {
+		timerRef.current = setTimeout(() => {
+			setShowGenie(true);
+		}, 3000);
+	};
+
+	const handleLampMouseLeave = () => {
+		clearTimeout(timerRef.current);
+		setShowGenie(false);
+	};
+
 	return (
 		<>
 			<img
@@ -41,13 +58,14 @@ const Scene3 = () => {
 				Alone in the tomb, Aladdin wishes to be home. A genie appears from the
 				lamp when hovering over it and grants his wish{" "}
 			</p>
-			<img
+			{/* Lamp with hover logic */}
+			<motion.img
 				className="Lamp"
 				src={Lamp}
 				alt="Logo"
 				style={{
 					position: "absolute",
-					top: "4110px",
+					top: "4148px",
 					left: "45%",
 					width: "10%",
 					height: "auto",
@@ -55,7 +73,35 @@ const Scene3 = () => {
 					backgroundSize: "cover",
 					zIndex: 1,
 				}}
+				onMouseEnter={handleLampMouseEnter}
+				onMouseLeave={handleLampMouseLeave}
+				whileHover={{ scale: 1.1, rotate: 10 }}
+				transition={{ type: "spring", stiffness: 300 }}
 			/>
+			{/* Genie appears with fade in */}
+			<AnimatePresence>
+				{showGenie && (
+					<motion.img
+						className="Genie"
+						src={Genie}
+						alt="Logo"
+						style={{
+							position: "absolute",
+							top: "3820px",
+							left: "29%",
+							width: "20%",
+							height: "auto",
+							margin: 0,
+							backgroundSize: "cover",
+							zIndex: 1,
+						}}
+						initial={{ opacity: 0, scale: 0.8 }}
+						animate={{ opacity: 1, scale: 1 }}
+						exit={{ opacity: 0, scale: 0.8 }}
+						transition={{ duration: 0.5 }}
+					/>
+				)}
+			</AnimatePresence>
 			<img
 				src={StreetAladdin}
 				alt="Image 2"

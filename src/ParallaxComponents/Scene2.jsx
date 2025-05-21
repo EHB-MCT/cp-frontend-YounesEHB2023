@@ -126,7 +126,7 @@ const Scene2 = () => {
 						zIndex: 1,
 					}}
 					animate={{
-						y: [0, -15, 0], // Moves up 15px then back
+						y: [0, -8, 0], // Moves up 15px then back
 					}}
 					transition={{
 						duration: 2,
