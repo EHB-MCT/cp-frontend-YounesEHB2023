@@ -20,12 +20,18 @@ const Intro = () => {
 	}, []);
 
 	return (
-		<div id="intro" style={{ position: "fixed" }}>
+		<div
+			id="intro"
+			style={{ position: "fixed", width: "100vw", height: "100vh" }}
+		>
 			<div
 				id="intro-section"
 				style={{
 					position: "fixed",
 					top: 0,
+					left: 0,
+					width: "100vw",
+					height: "100vh",
 					overflow: "hidden",
 				}}
 			>
@@ -42,12 +48,12 @@ const Intro = () => {
 						backgroundSize: "cover",
 						backgroundPosition: "center",
 						zIndex: 0,
-						transform: `translateY(${scrollY * 0.1}px)`,
+						// Removed the parallax transform effect here
 					}}
 				/>
 
-				{/* Parallax Layer (fixed, does not move) */}
-				<div
+				{/* Parallax Layer (now with parallax effect) */}
+				<motion.div
 					className="LayerIntro"
 					style={{
 						position: "relative",
@@ -60,6 +66,7 @@ const Intro = () => {
 						backgroundPosition: "center",
 						zIndex: 1,
 						pointerEvents: "none",
+						transform: `translateY(${scrollY * 0.1}px)`, // Added parallax effect here
 					}}
 				/>
 

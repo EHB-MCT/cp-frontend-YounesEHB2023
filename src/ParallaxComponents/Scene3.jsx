@@ -260,7 +260,7 @@ const Scene3 = () => {
 			<p
 				style={{
 					position: "absolute",
-					top: "5500px",
+					top: "5460px",
 					left: "33%",
 					width: "35%",
 					color: "white",
