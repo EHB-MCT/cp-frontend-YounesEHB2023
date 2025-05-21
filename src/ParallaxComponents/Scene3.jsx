@@ -68,7 +68,7 @@ const Scene3 = () => {
 				alt="Logo"
 				style={{
 					position: "absolute",
-					top: "4148px",
+					top: "4108px",
 					left: "45%",
 					width: "10%",
 					height: "auto",
@@ -181,7 +181,7 @@ const Scene3 = () => {
 					left: "30%",
 					width: "150px",
 					height: "auto",
-					top: "4990px",
+					top: "4930px",
 					zIndex: 1,
 				}}
 			/>
@@ -191,7 +191,7 @@ const Scene3 = () => {
 				alt="Logo"
 				style={{
 					position: "absolute",
-					top: "5140px",
+					top: "5095px",
 					left: "55%",
 					width: "10%",
 					height: "auto",
@@ -213,7 +213,7 @@ const Scene3 = () => {
 						alt="Logo"
 						style={{
 							position: "absolute",
-							top: "4897px",
+							top: "4877px",
 							left: "42%",
 							width: "15%",
 							height: "auto",
@@ -235,7 +235,7 @@ const Scene3 = () => {
 				alt="Logo"
 				style={{
 					position: "absolute",
-					top: "5455px",
+					top: "5378px",
 					left: 0,
 					width: "100%",
 					height: "auto",
@@ -249,7 +249,7 @@ const Scene3 = () => {
 				alt="Logo"
 				style={{
 					position: "absolute",
-					top: "5455px",
+					top: "5380px",
 					left: 0,
 					width: "100%",
 					height: "auto",
@@ -286,7 +286,7 @@ const Scene3 = () => {
 					left: "30%",
 					width: "150px",
 					height: "auto",
-					top: "5700px",
+					top: "5650px",
 					zIndex: 1,
 				}}
 			/>
@@ -300,7 +300,7 @@ const Scene3 = () => {
 					left: "50%",
 					width: "350px",
 					height: "auto",
-					top: "5784px",
+					top: "5730px",
 					zIndex: 1,
 				}}
 			/>

@@ -117,7 +117,7 @@ const Scene2 = () => {
 					alt="Logo"
 					style={{
 						position: "absolute",
-						top: "2250px",
+						top: "2220px",
 						left: "45%",
 						width: "10%",
 						height: "auto",
