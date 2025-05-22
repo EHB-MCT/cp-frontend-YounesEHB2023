@@ -1,6 +1,6 @@
 import AllProjectsBtn from "../components/AllProjectsBtn";
 import SearchFilter from "../components/SearchFilter";
-import Spotlight from "../components/Spotlight";
+import SpotlightHome from "../components/SpotlightHome";
 import Underline from "../components/Underline";
 function Home() {
 	return (
@@ -9,7 +9,7 @@ function Home() {
 			<Underline />
 			<div className="home-text">
 				<h1>Int the spotlight</h1>
-				<Spotlight />
+				<SpotlightHome />
 				<AllProjectsBtn />
 			</div>
 		</div>

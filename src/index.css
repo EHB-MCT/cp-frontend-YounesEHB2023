@@ -91,70 +91,112 @@ nav a {
 	width: 65%;
 }
 .spotlight-wrapper {
-	display: flex;
-	justify-content: space-evenly;
-	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	gap: 40px;
+	padding: 10px 0 0 0;
 }
 
 .spotlight-container {
 	border: 5px solid black;
-	border-radius: 10px;
+	border-radius: 15px;
 	background-color: white;
-	width: 250px;
-	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	width: 340px;
+	height: 520px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center; /* Center content vertically */
+	padding-bottom: 25px;
+	margin-bottom: 0;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 
-.spotlight-container:hover {
-	transform: translateY(-5px);
+.spotlight-image {
+	width: 90%;
+	max-width: 260px;
+	margin: 0 auto;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-.spotlight-image .image {
-	text-align: center;
-	margin-top: 10px;
-	max-width: 80%;
+.spotlight-image .image,
+.spotlight-image img {
+	width: 100%;
+	max-width: 220px;
+	max-height: 220px;
+	border-radius: 8px;
+	object-fit: contain;
+	display: block;
 }
 
 .spotlight-content {
 	text-align: center;
+	margin-top: 15px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .spotlight-content h2 {
-	font-size: 18px;
-	margin: 10px 0 5px;
-	color: #333;
+	font-size: 28px;
+	margin: 10px 0 0 0;
+	color: #222;
+	font-family: "Bungee", sans-serif;
 }
 
 .spotlight-content p {
-	font-size: 14px;
-	color: #666;
+	font-size: 18px;
+	color: #444;
 	margin: 0;
+	font-family: "Merienda", cursive;
 }
 
 .spotlight-icon {
-	margin-top: 15px;
+	margin-top: 18px;
 	text-align: center;
-	margin-left: 90px;
-	width: 25%;
-	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
 }
 
 .spotlight-icon img {
-	width: 15%;
+	width: 55px;
+	height: 55px;
+	object-fit: contain;
+	border-radius: 50%;
 }
+
 .all-projects-btn {
 	background-color: red;
 	color: white;
 	font-family: "Bungee", sans-serif;
-	font-size: 16px;
+	font-size: 22px;
 	font-weight: bold;
-	padding: 10px 20px;
-	border-radius: 25px;
+	padding: 14px 32px;
+	border-radius: 30px;
 	text-transform: uppercase;
 	display: block;
-	margin: 20px auto;
+	margin: 30px auto 0 auto;
 	text-align: center;
 	text-decoration: none;
-	width: 150px;
+	width: 260px;
+	letter-spacing: 1px;
+	border: none;
+	cursor: pointer;
+	transition: background 0.2s, transform 0.2s;
+}
+
+.all-projects-btn:hover {
+	transform: translateY(-3px) scale(1.04);
+	background: #c00;
 }
 
 .all-projects-btn:hover {

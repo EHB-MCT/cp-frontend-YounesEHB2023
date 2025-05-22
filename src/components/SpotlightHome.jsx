@@ -4,13 +4,26 @@ import info from "../assets/images/info_icon.png";
 const DATA_URL =
 	"https://raw.githubusercontent.com/EHB-MCT/cp-frontend-MaximWesterbeek/refs/heads/main/course-project/public/api/fairytaleList.json";
 
-const Spotlight = () => {
+function getRandomItems(arr, n) {
+	const result = [];
+	const taken = new Set();
+	while (result.length < n && arr.length > 0) {
+		const idx = Math.floor(Math.random() * arr.length);
+		if (!taken.has(idx)) {
+			result.push(arr[idx]);
+			taken.add(idx);
+		}
+	}
+	return result;
+}
+
+const SpotlightHome = () => {
 	const [fairytales, setFairytales] = useState([]);
 
 	useEffect(() => {
 		fetch(DATA_URL)
 			.then((res) => res.json())
-			.then((data) => setFairytales(data))
+			.then((data) => setFairytales(getRandomItems(data, 3)))
 			.catch(() => setFairytales([]));
 	}, []);
 
@@ -44,4 +57,4 @@ const Spotlight = () => {
 	);
 };
 
-export default Spotlight;
+export default SpotlightHome;
