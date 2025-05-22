@@ -15,7 +15,7 @@ const Scene2 = () => {
 	React.useEffect(() => {
 		const timer = setTimeout(() => {
 			setJafarVisible(false);
-		}, 20000);
+		}, 25000);
 		return () => clearTimeout(timer);
 	}, []);
 	// this is the code to let jafar disappear after 20 seconds
@@ -227,8 +227,7 @@ const Scene2 = () => {
 						backgroundSize: "cover",
 					}}
 					animate={{
-						x: [0, -5, 5, -5, 0],
-						y: [0, -5, 5, -5, 0],
+						y: [0, -4, 4, -4, 0],
 					}}
 					transition={{
 						duration: 2,
@@ -287,7 +286,7 @@ const Scene2 = () => {
 						left: "58%",
 						width: "20%",
 						height: "auto",
-						top: "3395px",
+						top: "3335px",
 						zIndex: 1,
 					}}
 					animate={{ opacity: jafarVisible ? 1 : 0 }}

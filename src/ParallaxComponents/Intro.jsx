@@ -48,11 +48,10 @@ const Intro = () => {
 						backgroundSize: "cover",
 						backgroundPosition: "center",
 						zIndex: 0,
-						// Removed the parallax transform effect here
 					}}
 				/>
 
-				{/* Parallax Layer (now with parallax effect) */}
+				{/* Parallax Layer  */}
 				<motion.div
 					className="LayerIntro"
 					style={{

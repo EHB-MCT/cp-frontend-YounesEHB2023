@@ -45,7 +45,7 @@ const Scene3 = () => {
 			<p
 				style={{
 					position: "absolute",
-					top: "3800px",
+					top: "3850px",
 					left: "60%",
 					width: "35%",
 					color: "white",
@@ -58,8 +58,10 @@ const Scene3 = () => {
 					backgroundColor: "rgba(128, 128, 128, 0.5)",
 				}}
 			>
-				Alone in the tomb, Aladdin wishes to be home. A genie appears from the
-				lamp when hovering over it and grants his wish{" "}
+				Alone in the tomb, Aladdin wishes to be home. A genie appears
+				<br />
+				<br />
+				Rub the lamp!
 			</p>
 			{/* Lamp with hover logic */}
 			<motion.img
@@ -229,7 +231,7 @@ const Scene3 = () => {
 				)}
 			</AnimatePresence>
 			{/*Market */}
-			<img
+			<motion.img
 				className="Market"
 				src={Market}
 				alt="Logo"
@@ -242,11 +244,18 @@ const Scene3 = () => {
 					margin: 0,
 					backgroundSize: "cover",
 				}}
+				initial={{ opacity: 0, y: 40 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, amount: 0.3 }}
+				transition={{ duration: 0.8 }}
 			/>
-			<img
+			<motion.img
 				className="Market"
 				src={MarketLayer2}
 				alt="Logo"
+				initial={{ y: -30, opacity: 0 }}
+				animate={{ y: 0, opacity: 1 }}
+				transition={{ duration: 1 }}
 				style={{
 					position: "absolute",
 					top: "5380px",
@@ -276,9 +285,13 @@ const Scene3 = () => {
 				She appears in front of him. Now only one wish remains… what will his
 				final choice be?
 			</p>
-			<img
+			<motion.img
 				src={StreetAladdin}
 				alt="Image 2"
+				initial={{ x: -60, opacity: 0 }}
+				whileInView={{ x: 0, opacity: 1 }}
+				viewport={{ once: true, amount: 0.3 }}
+				transition={{ duration: 1 }}
 				style={{
 					position: "absolute",
 					bottom: "50px",
@@ -290,9 +303,13 @@ const Scene3 = () => {
 					zIndex: 1,
 				}}
 			/>
-			<img
+			<motion.img
 				src={Yasmine}
 				alt="Image 2"
+				initial={{ x: 60, opacity: 0 }}
+				whileInView={{ x: 0, opacity: 1 }}
+				viewport={{ once: true, amount: 0.3 }}
+				transition={{ duration: 1 }}
 				style={{
 					position: "absolute",
 					bottom: "50px",
