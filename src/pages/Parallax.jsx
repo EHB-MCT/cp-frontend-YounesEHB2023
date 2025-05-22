@@ -4,7 +4,6 @@ import Scene3 from "../ParallaxComponents/Scene3";
 function Parallax() {
 	return (
 		<div className="parallax-container">
-			{/* <Navbar2 /> */}
 			<Intro />
 			<Scene2 />
 			<Scene3 />

@@ -177,7 +177,7 @@ const Scene3 = () => {
 				He is instantly back in his house. Aladdin makes a second wish to see
 				princess Jasmine.
 			</p>
-			<img
+			<motion.img
 				src={StreetAladdin}
 				alt="Image 2"
 				style={{
@@ -190,6 +190,10 @@ const Scene3 = () => {
 					top: "4930px",
 					zIndex: 1,
 				}}
+				initial={{ x: -200, opacity: 0 }}
+				whileInView={{ x: 0, opacity: 1 }}
+				viewport={{ once: true, amount: 0.2 }}
+				transition={{ duration: 0.8 }}
 			/>
 			<motion.img
 				className="Lamp"

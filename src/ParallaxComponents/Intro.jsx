@@ -50,7 +50,6 @@ const Intro = () => {
 						zIndex: 0,
 					}}
 				/>
-
 				{/* Parallax Layer  */}
 				<motion.div
 					className="LayerIntro"
@@ -68,27 +67,35 @@ const Intro = () => {
 						transform: `translateY(${scrollY * 0.1}px)`, // Added parallax effect here
 					}}
 				/>
-
 				{/* Title */}
 				<motion.div
 					style={{
 						position: "absolute",
-						top: "200px",
+						top: "30%",
+						left: "50%",
 						transform: "translate(-50%, -50%)",
 						color: "white",
 						zIndex: 2,
-						fontSize: "30px",
+						fontSize: "40px",
 						textAlign: "center",
 						fontFamily: "Merienda, cursive",
 						width: "100vw",
 					}}
-					initial={{ opacity: 0, y: -50 }}
-					animate={{ opacity: 1, y: 0 }}
-					transition={{ duration: 1.5 }}
 				>
-					<h1> Aladdin and the wonderlamp </h1>
+					<h1 style={{ display: "inline-block" }}>
+						{"Aladdin and the wonderlamp".split("").map((char, idx) => (
+							<motion.span
+								key={idx}
+								initial={{ opacity: 0, y: -30 }}
+								animate={{ opacity: 1, y: 0 }}
+								transition={{ delay: 0.08 * idx, duration: 0.4 }}
+								style={{ display: "inline-block" }}
+							>
+								{char === " " ? "\u00A0" : char}
+							</motion.span>
+						))}
+					</h1>
 				</motion.div>
-
 				{/* Jafar intro */}
 				<motion.img
 					src={Jafar}
@@ -106,7 +113,6 @@ const Intro = () => {
 						zIndex: 2,
 					}}
 				/>
-
 				{/* Aladdin intro with hover effect (Easter Egg Secret) */}
 				<motion.img
 					src={isHovered ? Secret : StreetAladdin}

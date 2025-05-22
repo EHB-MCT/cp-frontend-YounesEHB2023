@@ -26,7 +26,7 @@ const Scene2 = () => {
 				<motion.img
 					src={JafarRight}
 					alt="Image 1"
-					initial={{ x: -200, opacity: 0 }}
+					initial={{ x: 200, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 1 }}
 					viewport={{ once: true, amount: 0.2 }}
 					transition={{ duration: 1 }}
@@ -178,7 +178,7 @@ const Scene2 = () => {
 				<motion.img
 					src={JafarRight}
 					alt="Image 1"
-					initial={{ x: -200, opacity: 0 }}
+					initial={{ x: 200, opacity: 0 }}
 					whileInView={{ x: 0, opacity: 1 }}
 					viewport={{ once: true, amount: 0.2 }}
 					transition={{ duration: 1 }}
@@ -307,6 +307,8 @@ const Scene2 = () => {
 					}}
 					animate={{ opacity: jafarVisible ? 1 : 0 }}
 					transition={{ duration: 1 }}
+					whileInView={{ x: 0, opacity: 1 }}
+					viewport={{ once: true, amount: 0.2 }}
 				/>
 			</div>
 		</>

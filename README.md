@@ -16,3 +16,4 @@ If you are developing a production application, we recommend using TypeScript an
 [Parallax scroll](https://youtu.be/29UWA-GdA7k?si=8sSdkuRg8xHQcCrG)
 [404 error fix](https://youtu.be/fuGu-Ponjf8?si=roF68vpLt3z-quAN)
 [Deploy fix ( link from wout who had the same error, i just took over the steps)](https://chatgpt.com/share/682b3eeb-8054-8003-ab2b-8ca273860191)
+[added library motion primitives: installation: npx motion-primitives@latest add text-effect REMOVED BECAUSE IT DIDN'T WORK](https://motion-primitives.com/docs/text-effect#text-effect-per-character)
