@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+
 function SearchFilter({ onSearch, genres = [] }) {
 	// Add default filters
 	const defaultGenres = [
@@ -11,10 +13,11 @@ function SearchFilter({ onSearch, genres = [] }) {
 	];
 	const allGenres = Array.from(new Set([...defaultGenres, ...genres]));
 
+	const [search, setSearch] = useState("");
+	const [selectedGenre, setSelectedGenre] = useState("");
+
 	const handleSearch = () => {
-		const query = document.querySelector(".searchFilter input").value;
-		const genre = document.querySelector(".searchFilter select").value;
-		onSearch(query, genre);
+		onSearch(search, selectedGenre);
 	};
 
 	return (
@@ -22,20 +25,12 @@ function SearchFilter({ onSearch, genres = [] }) {
 			<input
 				type="text"
 				placeholder="Search for a fairy tale"
-				onChange={(event) =>
-					onSearch(
-						event.target.value,
-						document.querySelector(".searchFilter select").value
-					)
-				}
+				value={search}
+				onChange={(event) => setSearch(event.target.value)}
 			/>
 			<select
-				onChange={(event) =>
-					onSearch(
-						document.querySelector(".searchFilter input").value,
-						event.target.value
-					)
-				}
+				value={selectedGenre}
+				onChange={(event) => setSelectedGenre(event.target.value)}
 			>
 				<option value="">All Genres</option>
 				{allGenres.map((genre) => (
