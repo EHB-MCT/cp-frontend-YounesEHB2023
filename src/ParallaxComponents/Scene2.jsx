@@ -23,9 +23,13 @@ const Scene2 = () => {
 		<>
 			<div className="Cave-entrance">
 				{/* Jafar Rechter kant grot */}
-				<img
+				<motion.img
 					src={JafarRight}
 					alt="Image 1"
+					initial={{ x: -200, opacity: 0 }}
+					whileInView={{ x: 0, opacity: 1 }}
+					viewport={{ once: true, amount: 0.2 }}
+					transition={{ duration: 1 }}
 					style={{
 						position: "absolute",
 						bottom: "50px",
@@ -56,9 +60,13 @@ const Scene2 = () => {
 					mystery{" "}
 				</p>
 				{/* Aladdin Linker kant grot */}
-				<img
+				<motion.img
 					src={StreetAladdin}
 					alt="Image 2"
+					initial={{ x: -60, opacity: 0 }}
+					whileInView={{ x: 0, opacity: 1 }}
+					viewport={{ once: true, amount: 0.2 }}
+					transition={{ duration: 1 }}
 					style={{
 						position: "absolute",
 						bottom: "50px",
@@ -126,7 +134,7 @@ const Scene2 = () => {
 						zIndex: 1,
 					}}
 					animate={{
-						y: [0, -8, 0], // Moves up 15px then back
+						y: [0, -8, 0],
 					}}
 					transition={{
 						duration: 2,
@@ -149,9 +157,13 @@ const Scene2 = () => {
 					}}
 				/>
 				{/* Aladdin en jafar Lamp */}
-				<img
+				<motion.img
 					src={StreetAladdin}
 					alt="Image 2"
+					initial={{ x: -60, opacity: 0 }}
+					whileInView={{ x: 0, opacity: 1 }}
+					viewport={{ once: true, amount: 0.2 }}
+					transition={{ duration: 1 }}
 					style={{
 						position: "absolute",
 						bottom: "50px",
@@ -163,9 +175,13 @@ const Scene2 = () => {
 						zIndex: 1,
 					}}
 				/>
-				<img
+				<motion.img
 					src={JafarRight}
 					alt="Image 1"
+					initial={{ x: -200, opacity: 0 }}
+					whileInView={{ x: 0, opacity: 1 }}
+					viewport={{ once: true, amount: 0.2 }}
+					transition={{ duration: 1 }}
 					style={{
 						position: "absolute",
 						bottom: "50px",
@@ -275,7 +291,7 @@ const Scene2 = () => {
 						backgroundColor: "rgba(128, 128, 128, 0.5)",
 					}}
 				>
-					After an argument, he traps Aladdin inside and disappears.
+					After an argument, he traps Aladdin inside the cave and disappears.
 				</p>
 				<motion.img
 					src={Jafar}

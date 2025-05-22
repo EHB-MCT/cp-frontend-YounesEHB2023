@@ -107,9 +107,13 @@ const Scene3 = () => {
 					/>
 				)}
 			</AnimatePresence>
-			<img
+			<motion.img
 				src={StreetAladdin}
 				alt="Image 2"
+				initial={{ x: -100, opacity: 0 }}
+				whileInView={{ x: 0, opacity: 1 }}
+				viewport={{ once: true, amount: 0.3 }}
+				transition={{ duration: 1 }}
 				style={{
 					position: "absolute",
 					bottom: "50px",
@@ -122,7 +126,7 @@ const Scene3 = () => {
 				}}
 			/>
 			{/* Home aladdin */}
-			<motion.img
+			<img
 				className="Home_Aladdin"
 				src={Home_Aladdin}
 				alt="Logo"
@@ -135,12 +139,8 @@ const Scene3 = () => {
 					margin: 0,
 					backgroundSize: "cover",
 				}}
-				initial={{ opacity: 0, y: 40 }}
-				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ once: true, amount: 0.3 }}
-				transition={{ duration: 0.8 }}
 			/>
-			<img
+			<motion.img
 				className="Home_Aladdin"
 				src={Home_AladdinLayer}
 				alt="Logo"
@@ -153,6 +153,10 @@ const Scene3 = () => {
 					margin: 0,
 					backgroundSize: "cover",
 				}}
+				initial={{ opacity: 0, y: 40 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, amount: 0.3 }}
+				transition={{ duration: 1.1 }}
 			/>
 			<p
 				style={{
@@ -231,7 +235,7 @@ const Scene3 = () => {
 				)}
 			</AnimatePresence>
 			{/*Market */}
-			<motion.img
+			<img
 				className="Market"
 				src={Market}
 				alt="Logo"
@@ -244,18 +248,15 @@ const Scene3 = () => {
 					margin: 0,
 					backgroundSize: "cover",
 				}}
-				initial={{ opacity: 0, y: 40 }}
-				whileInView={{ opacity: 1, y: 0 }}
-				viewport={{ once: true, amount: 0.3 }}
-				transition={{ duration: 0.8 }}
 			/>
 			<motion.img
 				className="Market"
 				src={MarketLayer2}
 				alt="Logo"
-				initial={{ y: -30, opacity: 0 }}
-				animate={{ y: 0, opacity: 1 }}
-				transition={{ duration: 1 }}
+				initial={{ opacity: 0, y: 40 }}
+				whileInView={{ opacity: 1, y: 0 }}
+				viewport={{ once: true, amount: 0.3 }}
+				transition={{ duration: 0.8 }}
 				style={{
 					position: "absolute",
 					top: "5380px",
