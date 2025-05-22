@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 const MakingOfBtn = () => {
 	return (
-		<Link to="/projects" className="all-projects-btn">
-			Visit website{" "}
-		</Link>
+		<a href="/projects" className="MakingOf-btn">
+			Visit website
+		</a>
 	);
 };
 
