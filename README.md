@@ -5,8 +5,11 @@ This project has been made by Younes Ben Ali a student at Multimedia and creatie
 ## Scripts
 Command	               Description
 npm run dev	           Start local development server
+
 npm run build	         Build the project for production
+
 npm run preview	       Preview the production build
+
 npm run deploy	       Deploy to GitHub Pages
 
 
