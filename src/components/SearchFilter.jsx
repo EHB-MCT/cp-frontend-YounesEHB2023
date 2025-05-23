@@ -1,23 +1,10 @@
 import React, { useState } from "react";
 
-function SearchFilter({ onSearch, genres = [] }) {
-	// Add default filters
-	const defaultGenres = [
-		"avontuur",
-		"horror",
-		"fantasie",
-		"mythologie",
-		"dierenverhaal",
-		"romantiek",
-		"magie",
-	];
-	const allGenres = Array.from(new Set([...defaultGenres, ...genres]));
-
+function SearchFilter({ onSearch }) {
 	const [search, setSearch] = useState("");
-	const [selectedGenre, setSelectedGenre] = useState("");
 
 	const handleSearch = () => {
-		onSearch(search, selectedGenre);
+		onSearch(search);
 	};
 
 	return (
@@ -28,17 +15,6 @@ function SearchFilter({ onSearch, genres = [] }) {
 				value={search}
 				onChange={(event) => setSearch(event.target.value)}
 			/>
-			<select
-				value={selectedGenre}
-				onChange={(event) => setSelectedGenre(event.target.value)}
-			>
-				<option value="">All Genres</option>
-				{allGenres.map((genre) => (
-					<option key={genre} value={genre}>
-						{genre}
-					</option>
-				))}
-			</select>
 			<button onClick={handleSearch}>Search</button>
 		</div>
 	);

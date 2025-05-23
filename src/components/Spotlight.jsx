@@ -6,6 +6,7 @@ const DATA_URL =
 
 const Spotlight = () => {
 	const [fairytales, setFairytales] = useState([]);
+	const [genre, setGenre] = useState("All");
 
 	useEffect(() => {
 		fetch(DATA_URL)
@@ -14,9 +15,38 @@ const Spotlight = () => {
 			.catch(() => setFairytales([]));
 	}, []);
 
+	const genres = [
+		"All",
+		...Array.from(new Set(fairytales.map((f) => f.genre).filter(Boolean))),
+	];
+
+	const filteredFairytales =
+		genre === "All"
+			? fairytales
+			: fairytales.filter((item) => item.genre === genre);
+
 	return (
 		<div className="spotlight-projects">
-			{fairytales.map((item, index) => (
+			<div
+				className="spotlight-filter-wrapper"
+				style={{ marginBottom: "1rem" }}
+			>
+				<div className="spotlight-filter">
+					<label htmlFor="genre-filter">Filter by genre: </label>
+					<select
+						id="genre-filter"
+						value={genre}
+						onChange={(e) => setGenre(e.target.value)}
+					>
+						{genres.map((g) => (
+							<option key={g} value={g}>
+								{g}
+							</option>
+						))}
+					</select>
+				</div>
+			</div>
+			{filteredFairytales.map((item, index) => (
 				<div key={item.id || index} className="spotlight-container">
 					<div className="spotlight-image">
 						<img
