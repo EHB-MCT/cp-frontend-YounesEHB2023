@@ -86,7 +86,7 @@ nav a {
 	display: flex;
 	align-items: center;
 	gap: 18px;
-	margin: 30px 0 30px 0;
+	margin: 0px 0 30px;
 	justify-content: flex-end;
 	font-family: "Merienda", cursive;
 	font-size: 20px;
@@ -184,7 +184,7 @@ nav a {
 }
 
 .spotlight-content h2 {
-	font-size: 28px;
+	font-size: 20px;
 	margin: 10px 0 0 0;
 	color: #222;
 	font-family: "Bungee", sans-serif;
@@ -199,11 +199,10 @@ nav a {
 
 .spotlight-icon {
 	margin-top: 18px;
-	text-align: center;
 	display: flex;
 	justify-content: center;
-	align-items: center;
-	height: 60px;
+	align-items: flex-end;
+	height: 70px;
 }
 
 .spotlight-icon img {
@@ -211,6 +210,8 @@ nav a {
 	height: 55px;
 	object-fit: contain;
 	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
 }
 .spotlight-projects {
 	display: flex;

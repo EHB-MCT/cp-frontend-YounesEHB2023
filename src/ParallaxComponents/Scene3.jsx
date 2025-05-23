@@ -156,7 +156,7 @@ const Scene3 = () => {
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ once: true, amount: 0.3 }}
-				transition={{ duration: 1.1 }}
+				transition={{ duration: 1.5 }}
 			/>
 			<p
 				style={{
@@ -260,7 +260,7 @@ const Scene3 = () => {
 				initial={{ opacity: 0, y: 40 }}
 				whileInView={{ opacity: 1, y: 0 }}
 				viewport={{ once: true, amount: 0.3 }}
-				transition={{ duration: 0.8 }}
+				transition={{ duration: 1 }}
 				style={{
 					position: "absolute",
 					top: "5380px",
