@@ -22,11 +22,11 @@ To run this project locally, follow these steps:
 ```
 
 # Dependencies
-  "framer-motion": "^12.9.2",
-  "motion": "^12.12.1",
-  "react": "^19.0.0",
-  "react-dom": "^19.0.0",
-  "react-router-dom": "^7.5.1"
+  "framer-motion": "^12.9.2", <br>
+  "motion": "^12.12.1", <br>
+  "react": "^19.0.0", <br>
+  "react-dom": "^19.0.0", <br>
+  "react-router-dom": "^7.5.1" <br>
 
 # Scripts
 
@@ -84,7 +84,7 @@ To run this project locally, follow these steps:
   [Used for learning the useRef state](https://react.dev/reference/react/useRef)
 
 # Author
-Younes Ben Ali
-Student Multimedia & Creative Technology
-Erasmushogeschool Brussel
-[Linkedin] (https://www.linkedin.com/in/younes-ben-ali-70877b261/)
+Younes Ben Ali <br>
+Student Multimedia & Creative Technology <br>
+Erasmushogeschool Brussel <br>
+[Linkedin] (https://www.linkedin.com/in/younes-ben-ali-70877b261/) <br>
