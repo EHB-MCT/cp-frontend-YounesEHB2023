@@ -2,7 +2,6 @@ import React from "react";
 import SearchFilter from "../components/SearchFilter.jsx";
 import Underline from "../components/Underline.jsx";
 import MakingOfBtn from "../components/MakingOfBtn.jsx";
-import banner from "../assets/images/banner_Aladdin.jpg";
 function MakingOf() {
 	return (
 		<div className="background">
@@ -22,7 +21,7 @@ function MakingOf() {
 					<iframe
 						width="560"
 						height="315"
-						src="https://www.youtube.com/embed/7-Wla0Pk2AI"
+						src="https://www.youtube.com/embed/I4KTlQHzvas"
 						title="Explainer Video"
 						frameBorder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

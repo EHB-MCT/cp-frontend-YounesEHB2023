@@ -70,7 +70,7 @@ const Scene3 = () => {
 				alt="Logo"
 				style={{
 					position: "absolute",
-					top: "4108px",
+					top: "4145px",
 					left: "45%",
 					width: "10%",
 					height: "auto",
@@ -121,7 +121,7 @@ const Scene3 = () => {
 					left: "15%",
 					width: "150px",
 					height: "auto",
-					top: "4120px",
+					top: "4170px",
 					zIndex: 1,
 				}}
 			/>
@@ -187,7 +187,7 @@ const Scene3 = () => {
 					left: "30%",
 					width: "150px",
 					height: "auto",
-					top: "4930px",
+					top: "4990px",
 					zIndex: 1,
 				}}
 				initial={{ x: -200, opacity: 0 }}
@@ -201,7 +201,7 @@ const Scene3 = () => {
 				alt="Logo"
 				style={{
 					position: "absolute",
-					top: "5095px",
+					top: "5140px",
 					left: "55%",
 					width: "10%",
 					height: "auto",
@@ -223,7 +223,7 @@ const Scene3 = () => {
 						alt="Logo"
 						style={{
 							position: "absolute",
-							top: "4877px",
+							top: "4897px",
 							left: "42%",
 							width: "15%",
 							height: "auto",
@@ -245,7 +245,7 @@ const Scene3 = () => {
 				alt="Logo"
 				style={{
 					position: "absolute",
-					top: "5378px",
+					top: "5455px",
 					left: 0,
 					width: "100%",
 					height: "auto",
@@ -263,7 +263,7 @@ const Scene3 = () => {
 				transition={{ duration: 1 }}
 				style={{
 					position: "absolute",
-					top: "5380px",
+					top: "5400px",
 					left: 0,
 					width: "100%",
 					height: "auto",
@@ -274,7 +274,7 @@ const Scene3 = () => {
 			<p
 				style={{
 					position: "absolute",
-					top: "5460px",
+					top: "5520px",
 					left: "33%",
 					width: "35%",
 					color: "white",
@@ -304,7 +304,7 @@ const Scene3 = () => {
 					left: "30%",
 					width: "150px",
 					height: "auto",
-					top: "5650px",
+					top: "5750px",
 					zIndex: 1,
 				}}
 			/>
@@ -322,7 +322,7 @@ const Scene3 = () => {
 					left: "50%",
 					width: "350px",
 					height: "auto",
-					top: "5730px",
+					top: "5830px",
 					zIndex: 1,
 				}}
 			/>

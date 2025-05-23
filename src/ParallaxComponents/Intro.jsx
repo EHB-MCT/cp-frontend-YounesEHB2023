@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-// import IntroBG from "../assets/images/Parallax_background-20.jpg";
 import IntroBG from "../assets/images/Parallax_layer2.png";
 import Jafar from "../assets/images/jafar_aladdinRight.png";
 import StreetAladdin from "../assets/images/Aladdin.svg";
@@ -64,7 +63,7 @@ const Intro = () => {
 						backgroundPosition: "center",
 						zIndex: 1,
 						pointerEvents: "none",
-						transform: `translateY(${scrollY * 0.1}px)`, // Added parallax effect here
+						transform: `translateY(${scrollY * 0.1}px)`, 
 					}}
 				/>
 				{/* Title */}

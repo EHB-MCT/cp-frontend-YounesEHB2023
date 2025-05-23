@@ -18,7 +18,7 @@ const Scene2 = () => {
 		}, 25000);
 		return () => clearTimeout(timer);
 	}, []);
-	// this is the code to let jafar disappear after 20 seconds
+	// this is the code that is supposed to work to let jafar disappear after 20 seconds
 	return (
 		<>
 			<div className="Cave-entrance">
@@ -125,7 +125,7 @@ const Scene2 = () => {
 					alt="Logo"
 					style={{
 						position: "absolute",
-						top: "2220px",
+						top: "2255px",
 						left: "45%",
 						width: "10%",
 						height: "auto",
@@ -302,7 +302,7 @@ const Scene2 = () => {
 						left: "58%",
 						width: "20%",
 						height: "auto",
-						top: "3335px",
+						top: "3290px",
 						zIndex: 1,
 					}}
 					animate={{ opacity: jafarVisible ? 1 : 0 }}
