@@ -1,6 +1,18 @@
 ## About the project
 This project has been made by Younes Ben Ali a student at Multimedia and creatieve technology at Erasmushogeschool Brussel for the course front end by Mike Derycke. this project shows a website that show the projects of the other students + his own fairytale "Aladdin and the wonderlamp"
 
+
+## Scripts
+Command	               Description
+npm run dev	           Start local development server
+npm run build	         Build the project for production
+npm run preview	       Preview the production build
+npm run deploy	       Deploy to GitHub Pages
+
+
+
+
+
 ## Links documentation project
 
   [Hover-tap animation-tutorial](https://youtu.be/g601zycsPVA?si=U47nUWePjb-PrpC2)
