@@ -15,7 +15,7 @@ const Spotlight = () => {
 	}, []);
 
 	return (
-		<div className="spotlight-wrapper">
+		<div className="spotlight-projects">
 			{fairytales.map((item, index) => (
 				<div key={item.id || index} className="spotlight-container">
 					<div className="spotlight-image">

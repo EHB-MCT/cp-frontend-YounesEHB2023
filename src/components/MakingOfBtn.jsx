@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MakingOfBtn = () => {
 	return (
-		<a href="/projects" className="MakingOf-btn">
+		<a href="/parallax" className="MakingOf-btn">
 			Visit website
 		</a>
 	);

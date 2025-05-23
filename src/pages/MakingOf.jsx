@@ -22,7 +22,7 @@ function MakingOf() {
 					<iframe
 						width="560"
 						height="315"
-						src="https://www.youtube.com/embed/xvFZjo5PgG0?si=uFtKUanPZtTET14y"
+						src="https://www.youtube.com/"
 						title="Explainer Video"
 						frameBorder="0"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
