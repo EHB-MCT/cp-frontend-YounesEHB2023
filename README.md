@@ -2,7 +2,7 @@
 
 ## About the project
 This project has been made by Younes Ben Ali a student at Multimedia and creatieve technology at Erasmushogeschool Brussel for the course front end by Mike Derycke. this project shows a website that show the projects of the other students + his own fairytale "Aladdin and the wonderlamp"
-
+(https://ehb-mct.github.io/cp-frontend-YounesEHB2023/)
 
 ## Scripts
 Command-----------------------Description
