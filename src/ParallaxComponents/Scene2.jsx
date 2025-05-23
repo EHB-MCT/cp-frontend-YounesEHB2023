@@ -125,7 +125,7 @@ const Scene2 = () => {
 					alt="Logo"
 					style={{
 						position: "absolute",
-						top: "2255px",
+						top: "2215px",
 						left: "45%",
 						width: "10%",
 						height: "auto",
@@ -302,7 +302,7 @@ const Scene2 = () => {
 						left: "58%",
 						width: "20%",
 						height: "auto",
-						top: "3290px",
+						top: "3336px",
 						zIndex: 1,
 					}}
 					animate={{ opacity: jafarVisible ? 1 : 0 }}

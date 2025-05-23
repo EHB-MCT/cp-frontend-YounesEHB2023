@@ -63,7 +63,7 @@ const Intro = () => {
 						backgroundPosition: "center",
 						zIndex: 1,
 						pointerEvents: "none",
-						transform: `translateY(${scrollY * 0.1}px)`, 
+						transform: `translateY(${scrollY * 0.1}px)`,
 					}}
 				/>
 				{/* Title */}
@@ -108,7 +108,7 @@ const Intro = () => {
 						left: "64%",
 						width: "200px",
 						height: "auto",
-						top: "460px",
+						top: "360px",
 						zIndex: 2,
 					}}
 				/>
@@ -128,7 +128,7 @@ const Intro = () => {
 						left: "15%",
 						width: "150px",
 						height: "auto",
-						top: "305px",
+						top: "275px",
 						zIndex: 2,
 						transition: "transform 1s ease-in-out",
 						transform: isHovered ? "scale(1.1)" : "scale(1)",
