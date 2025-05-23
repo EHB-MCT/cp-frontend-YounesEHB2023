@@ -1,25 +1,47 @@
 ![Aladdin and the wonderlamp ](https://ehb-mct.github.io/cp-frontend-YounesEHB2023/BannerAladdin.png)
 
-## About the project
+# About the project
 This project has been made by Younes Ben Ali a student at Multimedia and creatieve technology at Erasmushogeschool Brussel for the course front end by Mike Derycke. this project shows a website that show the projects of the other students + his own fairytale "Aladdin and the wonderlamp"
 (https://ehb-mct.github.io/cp-frontend-YounesEHB2023/)
 
-## Scripts
-Command-----------------------Description
+# Up and Running
+To run this project locally, follow these steps:
+1. Clone repository
+  ```sh
+  git clone <repo-link>
+```
+2. Install the dependencies 
 
-npm run dev-->Start local development server
+    (recommended to do on mac, windows has problems installing the packages)
+  ```sh
+  $ npm install
+```
+3. Run website
+  ```sh
+  $ npm run dev
+```
 
-npm run build-->Build the project for production
+# Dependencies
+  "framer-motion": "^12.9.2",
+  "motion": "^12.12.1",
+  "react": "^19.0.0",
+  "react-dom": "^19.0.0",
+  "react-router-dom": "^7.5.1"
 
-npm run preview-->Preview the production build
+# Scripts
 
-npm run deploy-->Deploy to GitHub Pages
+| Command           | Description                     |
+|-------------------|---------------------------------|
+| `npm run dev`     | Start local development server  |
+| `npm run build`   | Build the project for production|
+| `npm run preview` | Preview the production build    |
+| `npm run deploy`  | Deploy to GitHub Pages          |
 
 
 
 
 
-## Links documentation project
+# Links documentation project
 
   [Hover-tap animation-tutorial](https://youtu.be/g601zycsPVA?si=U47nUWePjb-PrpC2)
   
@@ -60,3 +82,9 @@ npm run deploy-->Deploy to GitHub Pages
   [Used for importing images and know how to use it](https://create-react-app.dev/docs/adding-images-fonts-and-files/)
   
   [Used for learning the useRef state](https://react.dev/reference/react/useRef)
+
+# Author
+Younes Ben Ali
+Student Multimedia & Creative Technology
+Erasmushogeschool Brussel
+[Linkedin] (https://www.linkedin.com/in/younes-ben-ali-70877b261/)
